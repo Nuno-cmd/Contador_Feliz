@@ -8,3 +8,4 @@ Una vez entregado el mismo y finalizado el curso, por desarrollo personal mi int
 mayor claridad del código, que si bien es funcional tiene mucho por mejorar al respecto.
 Este proyecto puede ser de provecho a estudiantes de ingenierías relacionadas.
 Se agradecen los aportes en "clean code"
+El archivo Contador_Feliz.bak, contiene el Backup de la Base de Datos en SQL Server.
