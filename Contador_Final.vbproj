@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD3D160C-CF36-412B-A197-63E78DE53468}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Contador_Final.My.MyApplication</StartupObject>
+    <RootNamespace>Contador_Final</RootNamespace>
+    <AssemblyName>Contador_Final</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Fauricio\Desktop\SISTEMAS\Programacion III\Ejecutables\Contador Final\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Contador_Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Contador_Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoCF2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>334B5B78E57360B4D9EB49EA6E29F76EFCE6009E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Contador_Final_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Form5b_Productos.Designer.vb">
+      <DependentUpon>Form5b_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5b_Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_Facturar.Designer.vb">
+      <DependentUpon>Form6_Facturar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6_Facturar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_DocumentosEmitidos.Designer.vb">
+      <DependentUpon>Form8_DocumentosEmitidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8_DocumentosEmitidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1b_Recupera.Designer.vb">
+      <DependentUpon>Form1b_Recupera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1b_Recupera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_FacturaElectronica.Designer.vb">
+      <DependentUpon>Form7_FacturaElectronica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_FacturaElectronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_MantenimientoClientes.Designer.vb">
+      <DependentUpon>Form5_MantenimientoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_MantenimientoClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_DatosEmpresa.Designer.vb">
+      <DependentUpon>Form4_DatosEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4_DatosEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_MantenimientoUsuario.Designer.vb">
+      <DependentUpon>Form3_MantenimientoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_MantenimientoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Menu.Designer.vb">
+      <DependentUpon>Form2_Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_Login.Designer.vb">
+      <DependentUpon>Form1_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form5b_Productos.resx">
+      <DependentUpon>Form5b_Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_Facturar.resx">
+      <DependentUpon>Form6_Facturar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_DocumentosEmitidos.resx">
+      <DependentUpon>Form8_DocumentosEmitidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1b_Recupera.resx">
+      <DependentUpon>Form1b_Recupera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_MantenimientoClientes.resx">
+      <DependentUpon>Form5_MantenimientoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4_DatosEmpresa.resx">
+      <DependentUpon>Form4_DatosEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_Login.resx">
+      <DependentUpon>Form1_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Menu.resx">
+      <DependentUpon>Form2_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_MantenimientoUsuario.resx">
+      <DependentUpon>Form3_MantenimientoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_FacturaElectronica.resx">
+      <DependentUpon>Form7_FacturaElectronica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contador_Final_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CF-ConvertImage.ico" />
+    <Content Include="logoCF2.ico" />
+    <None Include="My Project\img\dollars_96693.png" />
+    <None Include="My Project\img\magnifier_search_1034.png" />
+    <None Include="My Project\img\save_14706.png" />
+    <None Include="My Project\img\blue_upgrade_recyclearrows_arrow_azul_12426.png" />
+    <None Include="My Project\img\arrow_left_17809.png" />
+    <None Include="My Project\img\exit_delete_17827.png" />
+    <None Include="My Project\img\window_maximize_icon_137012.png" />
+    <None Include="My Project\img\minimize_14775.png" />
+    <None Include="My Project\img\restore_14803.png" />
+    <None Include="My Project\img\off_logout_17916_48.png" />
+    <None Include="My Project\img\creditcard_23779.png" />
+    <None Include="My Project\img\blueshoppingcart_azul_12543.png" />
+    <None Include="My Project\img\blue_users_customers_clients_people_12438.png" />
+    <None Include="My Project\img\blue_user_client_person_12581.png" />
+    <None Include="My Project\img\blue_home_house_12608.png" />
+    <None Include="My Project\img\1486564398-menu2_81519.png" />
+    <None Include="My Project\img\ContadorFelizLogo.png" />
+    <None Include="My Project\img\password_key_9431.png" />
+    <None Include="My Project\img\ContadorFelizVerde.png" />
+    <None Include="My Project\img\RegistrosContables.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
